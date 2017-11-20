@@ -8,4 +8,5 @@ public class Var {
     public static String RconPassword;
     public static String RconPort;
     public static String RconHost;
+
 }

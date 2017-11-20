@@ -64,8 +64,9 @@ public class Login extends JFrame {
                 Var.RconPassword = password.getText();
                  try {
                      Var.rcon = new Rcon(Var.RconHost, Integer.parseInt(Var.RconPort), Var.RconPassword.getBytes());
-                     String result = Var.rcon.command("say Connected!");
+                     Var.rcon.command("say Connected!");
                      dispose();
+                     Var.rcon.disconnect();
                      new Gui();
                  }
                  catch (AuthenticationException ex) {

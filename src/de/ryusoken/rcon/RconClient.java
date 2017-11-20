@@ -8,7 +8,6 @@ import java.io.IOException;
 public class RconClient {
 
     public static void main(String[] args) {
-        new Gui();
         new Login();
 
     }
